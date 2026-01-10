@@ -29,4 +29,11 @@ public class PlayerStats : MonoBehaviour
             Debug.Log("Pemain Mati!");
         }
     }
+    // TARUH DI SINI (Baris baru)
+    public void Makan(float nutrisi)
+    {
+        hunger += nutrisi;
+        if (hunger > 100f) hunger = 100f;
+    }
+    }
 }
