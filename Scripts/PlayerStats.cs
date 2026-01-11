@@ -29,20 +29,15 @@ public class PlayerStats : MonoBehaviour
             Debug.Log("Pemain Mati!");
         }
     }
-    // TARUH DI SINI (Baris baru)
-    public void Makan(float nutrisi)
-    {
-        hunger += nutrisi;
-        if (hunger > 100f) hunger = 100f;
-    }
-    }
-    // Tambahkan ini besok di bawah fungsi Update
+
+    // Fungsi untuk menambah lapar (Makan)
     public void Makan(float nutrisi)
     {
         hunger += nutrisi;
         if (hunger > 100f) hunger = 100f;
     }
 
+    // Fungsi untuk menambah haus (Minum)
     public void Minum(float air)
     {
         thirst += air;
