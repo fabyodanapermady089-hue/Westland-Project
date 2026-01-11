@@ -36,4 +36,16 @@ public class PlayerStats : MonoBehaviour
         if (hunger > 100f) hunger = 100f;
     }
     }
+    // Tambahkan ini besok di bawah fungsi Update
+    public void Makan(float nutrisi)
+    {
+        hunger += nutrisi;
+        if (hunger > 100f) hunger = 100f;
+    }
+
+    public void Minum(float air)
+    {
+        thirst += air;
+        if (thirst > 100f) thirst = 100f;
+    }
 }
